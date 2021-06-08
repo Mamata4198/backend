@@ -6,7 +6,7 @@ let AccountDetails = new Schema({
    slNo: {
       type: String
    },
-   Amount: {
+   transactionNo: {
       type: String
    },
    transaction: {

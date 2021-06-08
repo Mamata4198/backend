@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bankRoute = express.Router();
+const cors = require('cors');
 
 // Bank model
 let Bank = require('../models/Bank');

@@ -9,7 +9,10 @@ let Bank = new Schema({
    branch: {
       type: String
    },
-   code: {
+   ifsccode: {
+      type: String
+   },
+   micrcode:{
       type: String
    },
    location: {
