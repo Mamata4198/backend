@@ -16,6 +16,9 @@ let Transfer = new Schema({
    name: {
     type: String
    },
+   amount: {
+      type: String
+     },
 }, {
    collection: 'transfer'
 })

@@ -22,6 +22,7 @@ mongoose.connect(dbConfig.db, {
 const bankRoute = require('../backend/routes/bank.route')
 const accountRoute = require('../backend/routes/account.route')
 const accountDetailsRoute = require('../backend/routes/accountDetails.route')
+const transferRoute = require('../backend/routes/transfer.route')
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -33,6 +34,7 @@ app.use('/', express.static(path.join(__dirname, 'dist/mean-stack-crud-app')));
 app.use('/api', bankRoute);
 app.use('/accountapi',accountRoute);
 app.use('/accountDetailsApi',accountDetailsRoute);
+app.use('/transferApi',transferRoute);
 
 
 // Create port
